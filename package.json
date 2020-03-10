@@ -1,0 +1,9 @@
+{
+  "name": "imenu",
+  "version": "1.0.0",
+  "description": "Nested menu.",
+  "main": "index.js",
+  "author": "zlatov <zlatov@ya.ru>",
+  "license": "MIT",
+  "private": false
+}
