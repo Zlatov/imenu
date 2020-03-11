@@ -6,7 +6,7 @@ const webpack = require("webpack")
 module.exports = {
   mode: "production",
   context: null,
-  entry: "./src/js.js",
+  entry: "./test/assets/js-production",
   output: {
     path: __dirname + "/dist",
     filename: "js.js",
