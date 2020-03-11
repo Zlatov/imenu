@@ -6,7 +6,10 @@
 
 ## Usage
 
-…
+```js
+import "imenu"
+import "imenu/dist/css.css"
+```
 
 ## Development
 
