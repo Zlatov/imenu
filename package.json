@@ -7,6 +7,10 @@
   "repository": "https://git@github.com:Zlatov/imenu.git",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "css menu",
+    "nested menu"
+  ],
   "files": [
     "dist/**/*"
   ],
