@@ -1,11 +1,15 @@
 {
   "name": "imenu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nested menu.",
   "main": "dist/js.js",
   "author": "zlatov <zlatov@ya.ru>",
+  "repository": "https://git@github.com:Zlatov/imenu.git",
   "license": "MIT",
   "private": false,
+  "files": [
+    "dist/**/*"
+  ],
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
