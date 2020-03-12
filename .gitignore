@@ -1,4 +1,4 @@
-node_modules/
-modules/
+node_modules/*
+!node_modules/imenu
 dist/
 test/public/

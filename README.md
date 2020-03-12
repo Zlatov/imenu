@@ -4,15 +4,23 @@
 
 `yarn add imenu`
 
+
+
+
 ## Usage
 
-…
+
+
 
 ## Development
 
-1. `./bash/dev.sh`
-2. `./bash/build.sh`
-3. `./bash/test.sh`
+Run both webpack processes:
+
+1. `./bash/build.sh` — compiling src to dist;
+2. `./bash/test.sh` — build in test/public.
+
+
+
 
 ## License
 

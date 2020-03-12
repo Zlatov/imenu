@@ -1,10 +1,10 @@
-$imenu_width: 150px;
-$background_color: #ffffff;
-$hover_background_color: #dddddd;
-$current_background_color: #eeeeee;
-$border_color: #dddddd;
-$border_radius: 4px;
-$color: inherit;
+$imenu_width: 100% !default;
+$background_color: #ffffff !default;
+$hover_background_color: #dddddd !default;
+$current_background_color: #eeeeee !default;
+$border_color: #dddddd !default;
+$border_radius: 4px !default;
+$color: inherit !default;
 
 .imenu {
   padding: 0;
