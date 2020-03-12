@@ -6,14 +6,14 @@ const webpack = require("webpack")
 module.exports = {
   mode: "production",
   context: null,
-  entry: "./test/assets/js-production",
+  entry: "./src/build.js",
   output: {
     path: __dirname + "/dist",
     filename: "js.js",
     library: "imenu",
     libraryTarget: "umd2"
   },
-  watch: false,
+  watch: true,
   devtool: false,
   optimization: {
     minimize: true
