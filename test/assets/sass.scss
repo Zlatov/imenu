@@ -5,3 +5,9 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+// 
+// Настройки imenu и, далее, подключение стилей imenu.
+// 
+@import "./imenu-variables.scss";
+@import "imenu/src/sass.scss";
