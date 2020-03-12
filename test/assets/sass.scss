@@ -1,7 +1,33 @@
 // 
 // Стили для производства тестирования и разработки
 // 
+
 html, body {
-  margin: 0;
-  padding: 0;
+  height: 100%;
 }
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+body::after {
+  content: "";
+  background: url("https://i.picsum.photos/id/185/3995/2662.jpg") repeat 0 0;
+  background-size: cover;
+  // opacity: 0.5;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  z-index: -1;   
+}
+
+// 
+// Настройки imenu и, далее, подключение стилей imenu.
+// 
+@import "./imenu-variables.scss";
+@import "imenu/src/sass.scss";

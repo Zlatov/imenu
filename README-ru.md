@@ -1,22 +1,22 @@
 # IMenu
 
-## Install
+## Установка
 
 `yarn add imenu`
 
 
 
 
-## Usage
+## Использование
 
-__No sass settings__
+__Без sass настроек__
 
 ```js
 import "imenu"
 import "imenu/dist/css.css"
 ```
 
-__Using your settings for the menu__
+__С использованием своих настроек для меню__
 
 ```js
 import "imenu"
@@ -37,16 +37,16 @@ $color: inherit;
 
 
 
-## Development
+## Разработка
 
-Run both webpack processes:
+Запустить оба webpack процесса:
 
-1. `./bash/build.sh` — compiling src to dist;
-2. `./bash/test.sh` — build in test/public.
-
-
+1. `./bash/build.sh` — компиляция src в dist;
+2. `./bash/test.sh` — сбор теста в test/public.
 
 
-## License
+
+
+## Лицензия
 
 [MIT License](https://opensource.org/licenses/MIT).

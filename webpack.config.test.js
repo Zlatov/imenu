@@ -6,11 +6,8 @@ const path = require('path');
 
 module.exports = {
   mode: "production",
-  resolve: {
-    modules: [path.resolve(__dirname, "modules"), "node_modules"]
-  },
   context: __dirname + "/test",
-  entry: "./assets/js-test",
+  entry: "./assets/js",
   output: {
     path: __dirname + "/test/public/js",
     filename: "js.js"
@@ -27,7 +24,7 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        exclude: /(node_modules|modules)/,
+        exclude: /(node_modules)/,
         use: {
           loader: "babel-loader",
           options: {
@@ -71,11 +68,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.DefinePlugin({
-      // 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-      // LANG: '"ru"',
-      DEV: false,
-    }),
     new MiniCssExtractPlugin({
       filename: "../css/css.css"
     })
