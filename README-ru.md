@@ -24,12 +24,12 @@ import "imenu"
 
 ```scss
 $imenu_width: 100px;
-$background_color: #ffffff;
-$hover_background_color: #dddddd;
-$current_background_color: #eeeeee;
-$border_color: #dddddd;
-$border_radius: 4px;
-$color: inherit;
+$imenu_background_color: red;
+$imenu_hover_background_color: black;
+$imenu_current_background_color: black;
+$imenu_border_color: red;
+$imenu_color: white;
+$imenu_border_radius: 0;
 
 @import "imenu/src/sass.scss";
 ```

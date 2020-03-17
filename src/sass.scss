@@ -1,25 +1,26 @@
 $imenu_width: 100% !default;
-$background_color: #ffffff !default;
-$hover_background_color: #dddddd !default;
-$current_background_color: #eeeeee !default;
-$border_color: #dddddd !default;
-$border_radius: 4px !default;
-$color: inherit !default;
+$imenu_background_color: #ffffff !default;
+$imenu_hover_background_color: #eeeeee !default;
+$imenu_current_background_color: #dddddd !default;
+$imenu_border_color: #dddddd !default;
+$imenu_border_radius: 4px !default;
 
 .imenu {
   padding: 0;
   margin: 0;
   list-style: none;
   width: $imenu_width;
-  border: solid 1px $border_color;
-  border-radius: $border_radius;
-  background-color: $background_color;
+  border: solid 1px $imenu_border_color;
+  border-radius: $imenu_border_radius;
+  background-color: $imenu_background_color;
   box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.2);
 
   a, span {
     display: block;
     padding: 10px 15px 10px 10px;
-    color: $color;
+    @if variable-exists(imenu_color) {
+      color: $imenu_color;
+    }
     text-decoration: none;
     word-break: break-word;
   }
@@ -28,16 +29,16 @@ $color: inherit !default;
     position: relative;
     margin-right: -1px;
     &:first-child {
-      border-top-left-radius: $border_radius;
-      border-top-right-radius: $border_radius;
+      border-top-left-radius: $imenu_border_radius;
+      border-top-right-radius: $imenu_border_radius;
     }
     &:last-child {
-      border-bottom-left-radius: $border_radius;
-      border-bottom-right-radius: $border_radius;
+      border-bottom-left-radius: $imenu_border_radius;
+      border-bottom-right-radius: $imenu_border_radius;
     }
 
     &:hover {
-      background-color: $hover_background_color;
+      background-color: $imenu_hover_background_color;
 
       &>ul {
         visibility: visible;
@@ -52,10 +53,10 @@ $color: inherit !default;
     }
 
     &.current {
-      background-color: $current_background_color;
+      background-color: $imenu_current_background_color;
 
       &:hover {
-        background-color: $hover_background_color;
+        background-color: $imenu_hover_background_color;
       }
     }
   }
@@ -72,9 +73,9 @@ $color: inherit !default;
     opacity: 0;
     top: 0;
     left: 100%;
-    border: solid 1px $border_color;
-    border-radius: $border_radius;
-    background-color: $background_color;
+    border: solid 1px $imenu_border_color;
+    border-radius: $imenu_border_radius;
+    background-color: $imenu_background_color;
     box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.2);
     transform: scale(0);
     transform-origin: left top 0;
@@ -125,10 +126,10 @@ $color: inherit !default;
 
     li {
       &:first-child {
-        border-radius: $border_radius 0 0 $border_radius;
+        border-radius: $imenu_border_radius 0 0 $imenu_border_radius;
       }
       &:last-child {
-        border-radius: 0 $border_radius $border_radius 0;
+        border-radius: 0 $imenu_border_radius $imenu_border_radius 0;
       }
     }
 
