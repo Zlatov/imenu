@@ -15,7 +15,7 @@ body {
 
 body::after {
   content: "";
-  background: url("https://i.picsum.photos/id/185/3995/2662.jpg") repeat 0 0;
+  background: url("https://picsum.photos/id/185/3995/2662.jpg") repeat 0 0;
   background-size: cover;
   // opacity: 0.5;
   top: 0px;
@@ -25,9 +25,3 @@ body::after {
   position: absolute;
   z-index: -1;   
 }
-
-// 
-// Настройки imenu и, далее, подключение стилей imenu.
-// 
-@import "./imenu-variables.scss";
-@import "imenu/src/sass.scss";
