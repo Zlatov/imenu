@@ -81,3 +81,37 @@ set :branch, :master # из какой ветки лить
 # set :branch, ENV['BRANCH'] if ENV['BRANCH']
 
 set :keep_releases, 5 # количество хранимых версий (для отката cap rollback)
+
+
+
+
+# 
+# Задачи деплоя приложения
+# 
+namespace :app do
+
+  desc 'Обновляем npm зависимости.'
+  task :yarn do
+    on roles(:all) do |host|
+      execute "cd #{deploy_to}/current/site && yarn"
+      info "Npm зависимости обновлены."
+    end
+  end
+
+  desc 'Подготавливаем фронтэнд.'
+  task :assets do
+    on roles(:all) do |host|
+      execute "cd #{deploy_to}/current/site && ./bash/build_production.sh"
+      info "Фронтэнд подготовлен."
+    end
+  end
+end
+
+
+
+
+# 
+# Деплой
+# 
+after :deploy, 'app:yarn' unless ENV['SKIP_HOOKS']
+after :deploy, 'app:assets' unless ENV['SKIP_HOOKS']

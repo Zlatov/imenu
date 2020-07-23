@@ -49,7 +49,15 @@ module.exports = {
         use: [
           {loader: MiniCssExtractPlugin.loader },
           {loader: "css-loader"},
-          {loader: "postcss-loader"},
+          {
+            loader: 'postcss-loader',
+            options: {
+              ident: 'postcss',
+              plugins: [
+                require('autoprefixer')()
+              ]
+            }
+          },
           {loader: "sass-loader", options: {implementation: require("sass")}}
         ]
       },

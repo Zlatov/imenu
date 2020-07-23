@@ -7,7 +7,7 @@
     "ilorem": "^1.2.0"
   },
   "scripts": {
-    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --config webpack.config.build.js",
+    "build_production": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --config webpack.config.build.js",
     "build_development": "NODE_ENV=development ./node_modules/webpack/bin/webpack.js --config webpack.config.build.js"
   },
   "devDependencies": {
@@ -23,6 +23,7 @@
     "postcss-loader": "^3.0.0",
     "sass": "^1.26.2",
     "sass-loader": "^8.0.2",
-    "webpack": "^4.43.0"
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
   }
 }
