@@ -25,6 +25,7 @@ import "./custom-imenu.scss"
 // ./custom-imenu.scss
 // Собственные настройки imenu
 $imenu_width: 100px;
+$imenu_nested_width: 200px;
 $imenu_background_color: red;
 $imenu_hover_background_color: black;
 $imenu_current_background_color: black;
