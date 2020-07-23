@@ -15,6 +15,7 @@ $imenu_border_radius: 4px !default;
   border-radius: $imenu_border_radius;
   background-color: $imenu_background_color;
   box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
 
   a, span {
     display: block;
