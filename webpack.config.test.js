@@ -6,7 +6,9 @@ const path = require('path');
 
 module.exports = {
   mode: "production",
-  context: __dirname + "/test",
+  resolve: {
+    modules: [path.resolve(__dirname, "modules"), "node_modules"]
+  },  context: __dirname + "/test",
   entry: "./assets/js",
   output: {
     path: __dirname + "/test/public/js",
@@ -24,7 +26,7 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        exclude: /(node_modules)/,
+        exclude: /(node_modules|modules)/,
         use: {
           loader: "babel-loader",
           options: {
