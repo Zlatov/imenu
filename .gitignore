@@ -4,3 +4,6 @@ test/public/
 
 # Пременные окружения в корне проекта
 variables.env
+
+# Cайт
+site/public/assets/
