@@ -12,17 +12,18 @@
 __No sass settings__
 
 ```js
-import "imenu"
 import "imenu/dist/css.css"
 ```
 
 __Using your settings for the menu__
 
 ```js
-import "imenu"
+import "./custom-imenu.scss"
 ```
 
 ```scss
+// ./custom-imenu.scss
+// Imenu custom settings
 $imenu_width: 100px;
 $imenu_background_color: red;
 $imenu_hover_background_color: black;
@@ -31,6 +32,7 @@ $imenu_border_color: red;
 $imenu_color: white;
 $imenu_border_radius: 0;
 
+// Imenu styles
 @import "imenu/src/sass.scss";
 ```
 
