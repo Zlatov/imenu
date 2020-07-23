@@ -5,12 +5,9 @@ import "./sass.scss"
 import "ilorem"
 
 // 
-// Подключение пакета (скомпилировано bash/build.sh).
+// Подключение пакета imenu.
 // 
-
-// // без настроек
-// import "imenu"
+// Если необходимо настроить:
+import "./custom-imenu.scss"
+// Если достаточно использовать стили по умолчанию:
 // import "imenu/dist/css.css"
-
-// с настройками (см. test/assets/sass.scss)
-import "imenu"
