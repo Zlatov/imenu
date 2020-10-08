@@ -1,4 +1,28 @@
+// html, body {
+//   margin: 0;
+//   padding: 0;
+// }
+
 html, body {
+  height: 100%;
+}
+
+body {
+  position: relative;
   margin: 0;
-  padding: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+body::after {
+  content: "";
+  background: url("https://picsum.photos/id/185/3995/2662.jpg") repeat 0 0;
+  background-size: cover;
+  // opacity: 0.5;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  z-index: -1;   
 }
