@@ -35,7 +35,7 @@ $imenu_border_radius: 4px !default;
   li {
     position: relative;
     margin-right: -1px;
-    transition: background-color .25s;
+    transition: background-color 0.25s;
     &:first-child {
       border-top-left-radius: $imenu_border_radius;
       border-top-right-radius: $imenu_border_radius;
@@ -46,7 +46,7 @@ $imenu_border_radius: 4px !default;
     }
 
     &>ul {
-      transition-delay: .2s;
+      transition-delay: 0.2s;
     }
     &:hover {
       background-color: $imenu_hover_background_color;
@@ -55,7 +55,7 @@ $imenu_border_radius: 4px !default;
         visibility: visible;
         opacity: 1;
         transform: scale(1);
-        transition-delay: .3s;
+        transition-delay: 0.3s;
       }
     }
     &:focus-within > ul {
@@ -81,7 +81,6 @@ $imenu_border_radius: 4px !default;
     list-style: none;
     position: absolute;
     z-index: 1000;
-    // visibility: hidden;
     opacity: 0;
     top: 0;
     left: 100%;
@@ -91,13 +90,7 @@ $imenu_border_radius: 4px !default;
     box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.2);
     transform: scale(0);
     transform-origin: left top 0;
-    transition: opacity .2s linear .1s, transform .2s linear .0s;
-
-    // &:hover {
-    //   transform: scale(1);
-    //   visibility: visible;
-    //   opacity: 1;
-    // }
+    transition: opacity 0.2s linear 0.1s, transform 0.2s linear 0.0s;
 
     &+i {
       display: block;
