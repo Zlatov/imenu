@@ -90,7 +90,7 @@ $imenu_border_radius: 4px !default;
     box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.2);
     transform: scale(0);
     transform-origin: left top 0;
-    transition: opacity 0.2s linear 0.1s, transform 0.2s linear 0.0s;
+    transition: opacity 0.2s linear 0.1s, transform 0.2s linear 0s;
 
     &+i {
       display: block;
